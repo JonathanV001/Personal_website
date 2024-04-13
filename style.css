@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .display{
@@ -12,7 +13,6 @@
 
 .sideBar .button{
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     height:4em;
     width: 100%;
@@ -52,11 +52,14 @@
     position: relative;
     display: flex;
     justify-content: center;;
+    align-items: center;
+    flex-direction: column;
 }
 
 .icons{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .icons img:hover{
@@ -65,9 +68,9 @@
 
 
 .alignment{
-    align-self: flex-end;
+    margin-top: auto;
+    height: 10%;
     width: 70%;
-    margin-bottom: 2em;
 }
 
 .icon{
@@ -76,6 +79,26 @@
     height: 4em;
 }
 
+.homeContent{
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectsContent{
+    display: none;
+}
+
+.experienceContent{
+    display: none;
+}
+
+.resumeContent{
+    display: none;
+}
 
 .fill:hover{
     fill: #FFFFFF;
@@ -162,6 +185,9 @@
     }
     .hamburgerMenu{
         display: flex;
+    }
+    .homeContent{
+        margin-top: 10vh;
     }
 }
 
