@@ -9,6 +9,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    min-height: 700px;
 }
 
 .sideBar .button{
@@ -196,6 +197,17 @@
     justify-content: center;
 }
 
+.description{
+    margin-right: 8em;
+    margin-left: 8em;
+    font-size: clamp(14px, 1.5vw, 24px);
+}
+
+.name{
+    font-size: clamp(32px,2vw, 400px);
+    color:#5400DD;
+}
+
 .projectsContent{
     display: none;
 }
@@ -269,7 +281,7 @@
 .portraitSideBar{
     opacity: 0;
     background-color: #5400DD;
-    height: 90%;
+    height: auto;
     width: 10%;
     display: none;
     align-items: center;
@@ -299,6 +311,10 @@
     }
     .projectsContent{
         flex-direction: column;
+    }
+    .description{
+        margin-left: 2em;
+        margin-right: 2em;
     }
 }
 
