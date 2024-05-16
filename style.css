@@ -4,12 +4,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .display{
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     min-height: 700px;
+    max-height: 100vh;
 }
 
 .sideBar .button{
@@ -72,9 +74,26 @@
     margin: .5em;
 }
 
+.experienceContent h1{
+    margin: 2em;
+    font-size: clamp(32px,2vw, 400px);
+}
+
 .experienceContent img{
     max-height: 50%;
     max-width: 50%;
+    margin: 2em;
+}
+
+.experienceContainer{
+    display: flex;
+    height: 50%;
+    border: 2px solid #5400DD;
+    border-radius: 2em;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    min-height: 400px;
 }
 
 .projectsContent{
@@ -86,20 +105,21 @@
     margin-top: 5%;
 }
 
-.projectsContent div{
+.projectsContentDiv{
     border: 2px solid #5400DD;
     border-radius: 2em;
     height: 90%;
     flex-basis: 30%;
     max-width: 500px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: clamp(18px, 1.5vw, 24px);
     position: relative;
 }
 
-.projectsContent div:before{
+.projectsContentDiv:before{
     background: linear-gradient(rgba(255,255,255,0.6), #5400DD);
     content: '';
   position: absolute;
@@ -122,6 +142,28 @@
 
 .projectsContent a:hover{
     color:#FFFFFF;
+}
+
+.projectsDescription{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.techIconContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: none;
+    z-index: 1;
+    margin: 2em;
+}
+
+.techIconContainer img{
+    height: 4rem;
+    width: 4rem;
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 .backgroundWebsite{
@@ -300,6 +342,15 @@
 }
 
 @media(orientation: portrait){
+/* display and main content can scroll when display is potrait*/
+    .display{
+        min-height: 100vh;
+        height: auto;
+        max-height: none;
+    }
+    .mainContent{
+        height: auto;
+    }
     .sideBar{
         display: none;
     }
@@ -311,17 +362,53 @@
     }
     .projectsContent{
         flex-direction: column;
+        margin-bottom: 2em;
+        height: auto;
+        min-width: 400px;
+    }
+    .projectsContentDiv{
+        margin-top: 2em;
+        /*min-height: 30%;*/
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .description{
         margin-left: 2em;
         margin-right: 2em;
     }
+    .experienceContainer{
+     flex-direction: column;
+     height: auto;
+     max-height: 50%;
+    }
+    .experienceContainer h1{
+        margin: 0;
+    }
+    .experienceContainer img{
+        margin: 0;
+        max-height: 40%;
+        max-width: 40%;
+    }
+    .backgroundWebsite{
+        background-image: none;
+    }
+    .backgroundPCWebsite{
+        background-image: none;
+    }
+    .backgroundUNCCApp{
+        background-image: none;
+    }
 }
-
 @media(orientation: landscape){
     .portraitSideBar{
         display: none;
     }
+    /*this is for experience icon sizing*/
+@media(max-width: 1300px){
+    .experienceContainer img{
+        display: none;
+    }
+}
 }
 
 @media(max-height: 38em){
@@ -335,3 +422,4 @@
         height: 24px;
     }
 }
+

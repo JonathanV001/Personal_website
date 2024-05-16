@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Jonathan Vaca-Ramirez</title>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 </head>
 
 <body>
@@ -43,23 +45,6 @@
         </div>
     </div>
     <div class="display">
-        <!--<div class="portraitSideBar" id="portraitSideBar">
-            <svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="#000000"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2_183)">
-                    <path class="fill" d="M20 40V28H28V40H38V24H44L24 6L4 24H10V40H20Z" fill="#323232" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_2_183">
-                        <rect width="48" height="48" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <div class="button"><a>Projects</a></div>
-            <div class="button"><a>Experience</a></div>
-            <div class="button"><a>Resume</a></div>
-        </div>-->
-
         <div class="sideBar">
             <svg class="icon" id="homeIconLand" width="48" height="48" viewBox="0 0 48 48" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -91,33 +76,70 @@
                 </p>
             </div>
             <div class="projectsContent" id="projectsContent">
-                <div class="backgroundWebsite">
+                <div class="backgroundWebsite projectsContentDiv">
                     <p><a href="https://github.com/JonathanV001/Personal_website " target="_blank">Personal Website</a>
                     </p>
+                    <div class="techIconContainer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    </div>
+                    <p class="projectsDescription">
+                        This is my personal website that I created on my own.
+                        It has information on the projects I have done and
+                        my experience.
+                    </p>
                 </div>
-                <div class="backgroundPCWebsite">
+                <div class="backgroundPCWebsite projectsContentDiv">
                     <p><a href="https://github.com/JonathanV001/pc-site-with-working-shopping-cart" target="_blank">PC
                             Shopping
                             Website</a></p>
+                    <div class="techIconContainer">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    </div>
+                    <p class="projectsDescription">
+                        This project simulates a website used to purchase prebulit PCs.
+                        It has a working shopping cart that a user can use to add items
+                        and see the total amount they would cost.
+                    </p>
                 </div>
-                <div class="backgroundUNCCApp">
+                <div class="backgroundUNCCApp projectsContentDiv">
                     <p><a href="https://github.com/Group10-Parking-Availability/Project-5" target="_blank">UNCC Parking
                             App</a></p>
+                    <div class="techIconContainer">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg" />
+                    </div>
+                    <p class="projectsDescription">
+                        This a school project I worked on with 8 other students. It is a parking app for UNCC.
+                        It shows how much availability there is for each parking deck. So far it only has front-end
+                        functionality but provides a basis for future development.
+                    </p>
                 </div>
             </div>
             <div class="experienceContent" id="experienceContent">
-                <img src="PIMOSH.jpg">
-                <h1>Pimosh network</h1>
-                <p class="description">●     Tutored K-8 students to enrich their learning in math and reading.</p>
-                <p class="description">●     Used software such as Figma to create UI designs. The UI designs were used
-                    to plan for an
-                    upcoming application.</p>
-                <p class="description">●     Taught fundamental coding concepts like variables and scope to students
-                    during Tech Titans
-                    summer program at Microsoft.</p>
-                <p class="description">●     Connected and job-shadowed Microsoft Technical Professionals. Learned about
-                    their day-to-day
-                    task, responsibilities, and projects they are involved in.</p>
+                <div class="experienceContainer">
+                    <h1>Pimosh network</h1>
+                    <p class="description">- Tutored K-8 students to enrich their learning in math and reading.</p>
+                    <p class="description">- Used software such as Figma to create UI designs. The UI designs were
+                        used
+                        to plan for an
+                        upcoming application.</p>
+                    <p class="description">- Taught fundamental coding concepts like variables and scope to students
+                        during Tech Titans
+                        summer program at Microsoft.</p>
+                    <p class="description">- Connected and job-shadowed Microsoft Technical Professionals. Learned
+                        about
+                        their day-to-day
+                        task, responsibilities, and projects they are involved in.</p>
+                    <img src="PIMOSH.jpg">
+                </div>
             </div>
             <div class="resumeContent" id="resumeContent">
                 <a href="Resume.docx" download>Download Resume</a>
