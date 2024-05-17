@@ -374,7 +374,7 @@
         padding-bottom: 1em;
         margin-left: 1em;
         margin-right: 1em;
-        max-width: 350px;
+        max-width: 300px;
     }
     .description{
         margin-left: 2em;
@@ -384,6 +384,7 @@
      flex-direction: column;
      height: auto;
      max-height: 50%;
+     max-width: 300px;
     }
     .experienceContainer h1{
         margin: 0;
