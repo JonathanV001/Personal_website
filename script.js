@@ -71,7 +71,7 @@ function projectButtonClick(){
     resetDropMenu();
     console.log("clciked");
     homeContent.style.display = "none";
-    projectsContent.style.display = "flex";
+    projectsContent.style.display = "block";
     experienceContent.style.display = "none";
     resumeContent.style.display = "none";
 }
@@ -95,5 +95,21 @@ function resumeButtonClick(){
     experienceContent.style.display = "none";
     resumeContent.style.display = "flex";
 }
+
+// Slide in animation for text
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting){
+                entry.target.classList.add("show");
+        }else{
+            entry.target.classList.remove("show");
+        }
+        
+    });
+});
+
+const hiddenEleemnts = document.querySelectorAll(".hidden");
+hiddenEleemnts.forEach((el) => observer.observe(el))
 
 });
