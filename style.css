@@ -83,7 +83,20 @@
     height: 100vh;
     min-height: 400px;
     width: 100%;
-    border-bottom: 2px solid  rgb(209, 209, 209);
+   /* border-bottom: 2px solid  rgb(209, 209, 209);*/
+}
+
+/*may remove in future*/
+.experienceContainer::after{
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 80%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: rgb(209, 209, 209);
 }
 
 .experienceContainerDescription{
@@ -348,6 +361,7 @@
     height: 10%;
     width: 10%;
     min-width: 100px;
+    min-height: 50px;
     /*z-index: 2;
     position: absolute;
     left: 0;
@@ -413,7 +427,7 @@
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s
+    transition: all 1s;
 }
 
 .show{
@@ -515,6 +529,26 @@
 @media(orientation: landscape){
     .portraitSideBar{
         display: none;
+    }
+}
+
+/* this for small screen landscape */
+@media(orientation: landscape) and (max-height: 400px){
+    .sideBar{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: flex;
+    }
+    .main{
+        width: 100%;
+    }
+    .projectsDescription{
+        margin-right: 1em;
+    }
+    .alignment{
+        margin-top: .5em;
+        margin-bottom: .5em;
     }
 }
 
